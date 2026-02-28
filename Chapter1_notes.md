@@ -1,0 +1,18 @@
+**Chapter 1: Understanding large language models**
+- LLM: neural network designed to understand, generate, and respond to human-like text
+    - deep neural network trained on massive amounts of data
+- LLMs utilize an architecture called the transformer, that allows them to pay selective attention to different parts of the input when making predictions
+- LLMs are usually pretrained on an unlabelled set of data as they are self-suprevised, meaning that they can make their own labels
+- Two most interesting fine tuning methods:
+    - Instruction fine-tuning: Laveled dataset consists of instruction and answer pairs
+    - Classification fine-tuning: Labeled dataset consists of texts and associated class labels
+- Transformer architecture:
+    - Encoder
+        - Processes input text and encodes it into a series of numerical representations or vectors - tries to capture the contextual information of the text
+    - Decoder: Takes encoded vectors and generates output text
+    - Encoder and decoder consist of many layers $${\rightarrow} connected by self-attention mechanism
+        - Self-attention mechanism: weighs the importance of different words or tokens in a sequence relative to each other
+- Three stages of coding an LLM:
+    - Stage 1: Implementing LLM architecture and data preparation process
+    - Stage 2: pretraining an LLM to create a foundation model
+    - Stage 3: Fine-tuning the foundation model to become a personal assistant or text classifier
