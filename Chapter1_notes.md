@@ -10,7 +10,7 @@
     - Encoder
         - Processes input text and encodes it into a series of numerical representations or vectors - tries to capture the contextual information of the text
     - Decoder: Takes encoded vectors and generates output text
-    - Encoder and decoder consist of many layers $${\rightarrow} connected by self-attention mechanism
+    - Encoder and decoder consist of many layers $${\rightarrow}$$ connected by self-attention mechanism
         - Self-attention mechanism: weighs the importance of different words or tokens in a sequence relative to each other
 - Three stages of coding an LLM:
     - Stage 1: Implementing LLM architecture and data preparation process
