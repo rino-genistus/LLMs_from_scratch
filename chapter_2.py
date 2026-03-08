@@ -56,7 +56,7 @@ text = "Hello, do you like tea?"
 
 all_tokens = sorted(list(set(preprocessed_data)))
 all_tokens.extend(["<|endoftext|>", "<|unk|>"]) #added two new tokens to the previous list of tokens
-vocab = {token:integer for token, integer in enumerate(all_tokens)}
+vocab = {token:integer for integer, token in enumerate(all_tokens)}
 print(len(vocab.items()))
 
 for i, item in enumerate(list(vocab.items())[-5:]): #Checking to make sure that the new tokens were properly added
@@ -83,6 +83,6 @@ text1 = "Hello, do you like tea?"
 text2 = "In the sunlit terraces of the palace."
 text = " <|endoftext|> ".join((text1, text2))
 #print(text)
-
 tokenizerV2 = SimpleTokenizerV2(vocab)
 print(tokenizerV2.encode(text))
+print(tokenizerV2.decode(tokenizerV2.encode(text)))
